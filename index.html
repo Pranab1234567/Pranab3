@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<title>portfolio</title>
+<style type="text/css">
+
+
+
+*{margim:0;padding:0;box-sizing:border-box;}
+body{width:100%;height:100%;}
+
+#header{display:flex;align-items:center;
+justify-content:space-between;
+padding:20px 90px;
+background-color:#e6f2ff;
+box-shadow:0 5px 15px rgba(0,0,0,0.06);
+z-index:999;
+position:sticky;top:0;left:0;
+}
+#navbar{display:flex;align-items:center;justify-content:space-between;position:relative;}
+
+#logo{font-size:20px;color:solid black;padding-right:20px;justify-content:space-between;}
+
+#navbar li{list-style:none;padding:10px 5px 30px 50px;position:relative;}
+#navbar li a{text-decoration:none;font-size:16px;font-weight:600;
+color:#9999ff;transition:0.3s ease;
+}
+
+#feature{padding-left:120px;padding-top:40px;background-color:#e6f2ff;height:100vh;}
+#feature .fe-box{width:600px; height:130px;text-align:center;
+padding:10px 15px;box-shadow:20px 20px 34px rgba(0,0,0,0.03);
+border:1px solid #cce7d0;border-radius:25px;margin:15px 0;background-color:#fff;
+}
+#feature .fe-box h1{font-size:30px;font-weight:900;}
+
+
+#feature .fe-box2{width:400px; height:120px;text-align:center;
+padding:20px 25px;box-shadow:20px 20px 34px rgba(0,0,0,0.03);
+border:1px solid #cce7d0;border-radius:25px;margin:15px 0;text-transform:uppercase;background-color:#fff;
+}
+
+#feature .box{width:50%;height:6%;min-width:250px;padding:10px 12px;padding-left:50px;padding-right:50px;
+border:1px solid #CCC7D0;border-radius:25px;cursor:pointer;
+box-shadow:20px 20px 20px rgba(0,0,0,0.02);background-color:#fff;
+margin:15px 0px;position:relative;transition:0.2s ease;margin-right:20px;justify-content:center;
+}
+#feature .box{margin-left:300px;}
+
+#feature .box span{color:red;}
+#feature .box p{font-size:20px;font-weight:600;}
+
+#feature .img{height:50%;width:100%;justify-content:center;padding:50px 40px;}
+
+#about{height:100vh;}
+#about .words{text-align:center;font-size:45px;padding:35px 20px 15px 15px;}
+#about .words span{color:#9999ff;}
+
+#feature .copy {padding-top:320px;font-size:25px;padding-left:440px;}
+
+
+#about{align-items:center;}
+#about  .box{width:50%;height:0%;min-width:250px;padding:10px 12px;padding-left:50px;padding-right:50px;
+border:1px solid #CCC7D0;border-radius:25px;cursor:pointer;
+box-shadow:20px 20px 20px rgba(0,0,0,0.02);background-color:#e6f2ff;
+margin:15px 0px;position:relative;transition:0.2s ease;margin-right:20px;justify-content:center;
+}
+#about .boxsection{display:flex;jusify-content:space_between;padding-top:20px;
+text-align:center;margin-left:5px;flex-wrap:wrap;justify-content:center;
+}
+#about .box img{width:100%;border-radius:20px;}
+#about .box :hover{box-shadow:20px 20px 30px rgba(0,0,0,0.04);}
+#about .boxsection .box{text-align:center;}
+#about .boxsection .box p{font-size:15px;}
+#about .copy {padding-left:600px;padding-top:100px;font-size:25px;}
+
+#work{background-color:#e6f2ff; height:100vh; padding:80px 30px 20px 20px;  }
+#work h1{text-align:center;text-transform:uppercase;font-size:50px;}
+#work span{color:blue;}
+
+
+
+
+#contact{ background-color:; height:80vh;display:flex;  }
+
+
+
+#contact{display:flex;justify-content:space-between;
+margin:0px;padding:0px;border:1px solid #e1e1e1;
+}
+#contact form{width:100%;display:flex;
+flex-direction:column;align-items:center;justify-content:center;padding-left:200px;padding-top:250px;
+}
+#contact form span{font-size:55px;color:#9999ff;padding-right:0px;}
+#contact form h2{font-size:26px;line-height:35px;padding:20px 0;}
+#contact form input{width:100%;padding:12px 15px  ;
+outline:none;margin-bottom:20px;border:1px solid #e1e1e1;background-color:#e6f2ff;
+}
+#contact form button{background-color:#088178;color:#fff;height:50px;width:150px;}
+
+#contact form textarea{width:100%;padding:12px 15px ;background-color:#e6f2ff;
+outline:none;margin-bottom:20px;border:1px solid #e1e1e1;
+}
+
+#contact .copy {padding-top:1750px;font-size:20px;padding-right:0px;}
+
+
+
+#work .boxsection{display:flex;jusify-content:space-between;padding-top:20px;
+text-align:center;margin-left:5px;flex-wrap:wrap;justify-content:center;
+}
+#work .box img{width:100%;border-radius:20px;}
+#work .boxsection .box{text-align:center;}
+#work{align-items:center;}
+#work .box{width:50%;height:0%;min-width:250px;padding:10px 12px;padding-left:50px;padding-right:50px;
+border:1px solid #CCC7D0;border-radius:25px;cursor:pointer;
+box-shadow:20px 20px 20px rgba(0,0,0,0.02);background-color:#fff;
+margin:15px 0px;position:relative;transition:0.2s ease;margin-right:20px;justify-content:center;
+}
+
+#work .copy {padding-top:300px;font-size:25px;padding-left:550px;}
+
+
+#skill h1{text-align:center;text-transform:uppercase;font-size:60px;padding-top:50px;}
+#skill span{color:blue;}
+#skill{ height:100vh ;  }
+#skill .copy {padding-top:;font-size:25px;padding-left:550px;}
+
+
+#skill .dress .box{width:50%;height:0%;min-width:250px;padding:10px 12px;padding-left:50px;padding-right:50px;
+border:1px solid #CCC7D0;border-radius:25px;cursor:pointer;
+box-shadow:20px 20px 20px rgba(0,0,0,0.02);background-color:#fff;
+margin:15px 0px;position:relative;transition:0.2s ease;margin-right:20px;justify-content:center;
+}
+
+#skill .dress .box{margin-left:350px;margin-bottom:100px;background-color:#e6f2ff;}
+
+#skill .box {padding-bottom:;}
+
+
+
+.dress{display:;justify-content: start; text-align:center;
+ flex-wrap:wrap; padding:10px; margin-left:0px;padding-left:80px;}
+.image-box { width: 150px;cursor:pointer;
+ height: 150px;flex-wrap:wrap; object-fit: cover;
+ padding:20px; margin-left:30px; border: 1px solid #ccc;
+ margin-bottom:10px;border-radius:50%;
+           
+         }
+          
+ .image-box img{
+ object-fit: cover;cursor:pointer;
+ padding:20px;justify-content:center;
+ margin-bottom:5px;
+ }
+
+#roal{ background-color:#e6f2ff; height:100vh; justify-content:center; }
+#roal h1{text-align:center;text-transform:uppercase;font-size:60px;padding-top:80px;}
+#roal span{color:blue;}
+
+
+#roal .boxsection{display:flex;jusify-content:space-between;padding-top:20px;
+text-align:center;margin-left:5px;flex-wrap:wrap;justify-content:center;
+
+}
+#roal .copy {padding-top:70px;font-size:25px;padding-left:550px;}
+
+
+#roal .boxsection .box{text-align:center;}
+#roal{align-items:center;}
+#roal .box{width:60%;height:0%;min-width:250px;padding:10px 12px;padding-left:50px;padding-right:50px;
+border:1px solid #CCC7D0;border-radius:25px;cursor:pointer;
+box-shadow:20px 20px 20px rgba(0,0,0,0.02);background-color:#fff;
+margin:15px 0px;position:relative;transition:0.2s ease;margin-right:20px;justify-content:center;
+}
+#roal .boxsection .box h3{color:blue;}
+
+
+
+
+
+
+
+#contact-details{display:;align-items:center;justify-content:space-between;}
+#contact-details .details{width:180%;padding-top:890px;}
+#contact-details .details span{font-size:18px;}
+#contact-details .details h2{font-size:26px;line-height:35px;padding:20px 0;}
+#contact-details .details h3{font-size:20px;padding-bottom:15px;}
+#contact-details .details li{list-style:none;display:flex;padding:10px 0;}
+#contact-details .details li i{font-size:15px;padding-right:22px;}
+#contact-details .details li p{margin:0;font-size:15px;}
+#contact-details .map{width:200%;height:600px;padding-top:250px;}
+#contact-details .map iframe{width:100%;height:100%;}
+
+
+
+
+
+
+
+
+#feature .box:active{
+ background-color:yellow;
+ transform:translateY(-18px);
+ }
+
+#feature .fe-box:active{
+ background-color:lime;
+ transform:translateY(-8px);
+ }
+#feature .fe-box2:active{
+ background-color:yellow;
+ transform:translateY(-8px);
+ }
+
+#about .boxsection .box:active{
+ background-color:lime;
+ transform:translateY(-15px);
+ }
+
+#work .boxsection .box:active{
+ background-color:yellow;
+ transform:translateY(-18px);
+ }
+
+#roal .boxsection .box:active{
+ background-color:yellow;
+ transform:translateY(-18px);
+ }
+#skill .dress .box:active{
+ background-color:aqua;
+ transform:translateY(-18px);
+ }
+
+
+</style>
+</head>
+<body>
+
+
+<section id="header">
+<div id="logo">
+<h1>Pranab kumar Mahalik</h1>
+</div>
+<ul id="navbar">
+<li><a href="#feature" class="nav-link" >Home</a></li>
+<li><a href="#about" class="nav-link" >About</a></li>
+<li><a href="#work" class="nav-link" >Work</a></li>
+<li><a href="#skill" class="nav-link" >Skill</a></li>
+<li><a href="#contact" class="nav-link" >Contact</a></li>
+</ul>
+</div>
+</section>
+
+
+
+
+<section id="feature"class="section-p1">
+<div class="fe-box">
+<h4>Hellow i am ,</h4>
+<h1>Pranab kumar mahalik</h1>
+</div>
+
+
+<div class="fe-box2">
+<h3>Sophomore, Sce Balasore</h3>
+<h5>software developer</h5>
+</div>
+
+<div class="img">
+<img src="/storage/emulated/0/Download/C1692238658.png " alt="photo">
+</div>
+
+
+
+<div class="box">
+<p>Hellow Every body currently i am learning
+<span>Java with Dsa</span>.
+</p>
+</div>
+
+
+
+
+<div class="copy">
+<i class="fa fa-copyright"></i>
+<p>2023 pranab kumar mahalik</p>
+<p>All right reserved</p>
+</div>
+
+</section>
+
+
+<section id="about">
+
+
+<div class="words">
+<h1>I know that <span>A High-quality
+ software can be</span>
+ 
+ A key differentiator for a <span>
+ Business in a compititive market.</span></h1>
+</div>
+
+<div class="boxsection">
+<div class="box">
+<img src="/storage/emulated/0/Pictures/Screenshots/IMG_20230906_205026.jpg" alt="logo">
+<h1>Computer Science and Engineering student</h1>
+
+<p>Srinix college of engineering , Balasore</p>
+
+<p>I am a second year student at SCE,Balasore. I have gained a strong
+foundation in computer science and engineering principles and have developed
+a passion for learning and exploring new technologies. I have completed 
+coursework in subjects such as data structure,algorithms,language and
+software engineering and have gained practical experience through various projects and internships.</p>
+</div>
+
+
+<div class="box">
+<img src="/storage/emulated/0/Pictures/Screenshots/IMG_20230910_182452.jpg" alt="logo">
+<h1>Web Developer</h1>
+
+<p>I have good foundation in HTML,CSS and Javascript
+and have successfully developed some web application.
+I am skilled in using modern libraries like gsap,scrolltriger,
+locomotive js to built responsive and intractive user interfaces.</p>
+
+
+<p>I have strong problem solving and communication skills which
+enables me to work effectivily with clients and teams to deliver
+high-quality that meet their needs.
+
+</p>
+</div>
+
+<div class="box">
+<img src="/storage/emulated/0/Pictures/Screenshots/IMG_20230910_182438.jpg" alt="logo">
+<h1>Android Developer</h1>
+
+<p>I always try to learn some new technology and
+new skills so now Andoid development is among them.
+now i am learning the bascis of android development.
+I started my journy with Kotlin and java .I hope i will 
+do some usefull projects vary soon.</p>
+
+
+<p>I have strong problem solving and communication skills which
+enables me to work effectivily with clients and teams to deliver
+high-quality that meet their needs.
+
+</p>
+</div>
+</div>
+<div class="copy">
+<i class="fa fa-copyright"></i>
+<p>2023 pranab kumar mahalik</p>
+<p>All right reserved</p>
+</div>
+</section>
+
+
+
+
+<section id="work">
+<h1>My creative <span>Projects </span>section</h1>
+
+<div class="boxsection">
+<div class="box">
+<img src="/storage/emulated/0/Pictures/Screenshots/IMG_20230906_205026.jpg" alt="logo">
+<h1>Portfolio Website</h1>
+
+<p>This website effectively showcase my skills
+as a developer.The frontend of the website was 
+built Html and Css,to style the webpage and 
+make it visually appealing , utilize the sanity to
+maneage and organize the content display on the website.
+
+</p>
+<h3>Html,Css</h3>
+
+</div>
+
+
+<div class="box">
+<img src="/storage/emulated/0/Pictures/Screenshots/IMG_20230910_182822.jpg" alt="logo">
+<h1>Ecommerce website</h1>
+
+<p>I have create a fully responsive ecommerce type sample website 
+where people can search the product and also when
+the person click on the product then it shows us the 
+details about the product and also add to cart facility.
+
+</p>
+<h3>Html, Css ,Javascript</h3>
+</div>
+
+<div class="box">
+<img src="/storage/emulated/0/Pictures/Screenshots/IMG_20230910_183043.jpg" alt="logo">
+<h1>Food website</h1>
+
+<p>I have create a food website where a person can 
+search all types of foods and also it shows the price
+ and the detais of the food.
+</p>
+<h3>Html, Css </h3>
+</div>
+</div>
+
+
+<div class="copy">
+<i class="fa fa-copyright"></i>
+<p>2023 pranab kumar mahalik</p>
+<p>All right reserved</p>
+</div>
+
+
+</section>
+
+
+
+
+
+<section id="skill">
+<h1>My Skills <span>&</span> Experience</h1>
+
+<section class="dress">
+<div class="dress">
+<div class="image-box">
+<img src="/storage/emulated/0/Pictures/Screenshots/IMG_20230907_203541.jpg">
+
+</div>
+<br><br>
+<div class="image-box">
+<img src=" /storage/emulated/0/Pictures/Screenshots/IMG_20230907_203459.jpg">
+
+
+<br>
+</div>
+<div class="image-box">
+<img src=" /storage/emulated/0/Pictures/Screenshots/IMG_20230907_203517.jpg">
+
+</div>
+<br>
+<div class="image-box">
+<img src="/storage/emulated/0/Pictures/Screenshots/IMG_20230907_202707.jpg ">
+
+
+</div>
+<br>
+<div class="image-box">
+<img src="/storage/emulated/0/Pictures/Screenshots/IMG_20230907_203606.jpg ">
+
+</div>
+<br>
+<div class="image-box">
+<img src=" /storage/emulated/0/Pictures/Screenshots/IMG_20230907_203627.jpg">
+
+
+</div>
+<br>
+<div class="image-box">
+<img src="/storage/emulated/0/Pictures/Screenshots/IMG_20230907_203644.jpg">
+
+</div>
+<br>
+<div class="image-box">
+<img src="/storage/emulated/0/Pictures/Screenshots/IMG_20230907_203805.jpg ">
+
+</div>
+</div>
+
+
+
+
+<div class="box">
+<p>Hellow Every body currently i am learning
+<span>Java with Dsa</span>.
+</p>
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<div class="copy">
+<i class="fa fa-copyright"></i>
+<p>2023 pranab kumar mahalik</p>
+<p>All right reserved</p>
+</div>
+
+</section>
+
+
+<section id="roal">
+<h1>My Roals <span>&</span> Responcibility</h1>
+
+<div class="boxsection">
+<div class="box">
+<img src="/storage/emulated/0/Pictures/Screenshots/IMG_20230907_215802.jpg" >
+<h1>Web-development Intern</h1>
+
+<p>I have successfully completed the web-development
+internship at <span>Bharat Intern</span>.From this 
+internship i have gained so much knowldge about the 
+fronted development and the roals and resopnsibility
+fro making a projects and many more.
+</p>
+<h3>Bharat Intern</h3>
+<h4>Bhopal Madhya pradesh</h4>
+</div>
+
+
+<div class="box">
+<img src="/storage/emulated/0/Pictures/Screenshots/IMG_20230907_215740.jpg">
+<h1>Internshala Student partnership program</h1>
+
+<p>I have successfully completed the internship at
+<span>Internshala</span>.From this internship i 
+have gained so much knowldge about the 
+Leadership quality and the marketing
+and the networking skill and many more.
+</p>
+<h3>Internshala</h3>
+<h4>Gurugram,Haryana</h4>
+</div>
+</div>
+
+
+<div class="copy">
+<i class="fa fa-copyright"></i>
+<p>2023 pranab kumar mahalik</p>
+<p>All right reserved</p>
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+<section id="contact">
+
+
+
+<section id="contact-details" class="section-p1">
+<div class="details">
+<span>GET IN TOUCH</span>
+<h2>Visit one of our agency location of contact as today</h2>
+<h3>Head Office</h3>
+
+<div>
+<li>
+<i class="fa fa-map-marker"></i>
+<p>Remuna ,Balasore ,Odosha,India</p>
+</li>
+<li>
+<i class="fa fa-envelope"></i>
+<p>pranabmahalik4@gmail.com</p>
+</li>
+<li>
+<i class="fa fa-phone"></i>
+<p>+916370436769</p>
+</li>
+<li>
+<i class="fa fa-clock-o"></i>
+<p>Monday to Saturday : 9:00am to 16pm</p>
+</li>
+</div>
+</div>
+
+<div class="map">
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1cs0dr3BTBm244iMZ821udUUT6sNtqzU&ehbc=2E312F" width="640" height="480"></iframe>">
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<form action="">
+<span>LEAVE A MESSAGE </span>
+<h2>WeLove to hear from you</h2>
+
+
+<input type="text" placeholder="your name">
+<input type="text" placeholder="E-mail">
+<input type="text" placeholder="Subject">
+<textarea name="" id="" cols="30" rows="10" placeholder="your message"></textarea>
+<button class="normal">Sendmessage</button>
+</form>
+
+<div class="copy">
+<i class="fa fa-copyright"></i>
+<p>2023 pranab kumar mahalik</p>
+<p>All right reserved</p>
+</div>
+</section>
+
+
+
+
+
+</body>
+</html>
