@@ -22,6 +22,17 @@ box-shadow:0 5px 15px rgba(0,0,0,0.06);
 z-index:999;
 position:sticky;top:0;left:0;
 }
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    #header { flex-direction: column; align-items: flex-start; padding: 10px; }
+    #navbar { flex-direction: column; }
+    #navbar li { padding: 10px 0; }
+    #navbar li a { font-size: 14px; }
+}
+
+
+        
 #navbar{display:flex;align-items:center;justify-content:space-between;position:relative;}
 
 #logo{font-size:20px;color:solid black;padding-right:20px;justify-content:space-between;}
@@ -236,7 +247,13 @@ display: inline-block;}
  background-color:aqua;
  transform:translateY(-18px);
  }
-
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    #feature, #about, #work, #skill, #roal, #contact { padding: 20px; }
+    #feature .fe-box, #feature .fe-box2, #feature .box { max-width: 100%; }
+    #about .box, #work .box, #roal .box { max-width: 100%; }
+    #contact form { padding: 20px; }
+                 }
 
 </style>
 </head>
